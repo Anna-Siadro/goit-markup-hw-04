@@ -171,7 +171,8 @@ a {
 
 .page-hero {
   background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
