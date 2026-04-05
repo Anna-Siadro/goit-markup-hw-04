@@ -151,6 +151,10 @@ a {
   color: #404bbf;
 }
 
+.nav-link.current {
+  color: #404bbf;
+}
+
 .nav-link.current::after {
   content: "";
   position: absolute;
@@ -221,13 +225,18 @@ a {
 }
 
 .features-icon-wrapper {
-  padding: 24px 100px;
-  margin-bottom: 8px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  background: #f4f4fd;
-  max-width: 100%;
-  max-height: 112px;
+
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 8px;
 }
 
 .features-item-title {
@@ -266,7 +275,7 @@ a {
 }
 
 .member-content {
-  padding: 32px 0;
+  padding: 32px 16px;
   text-align: center;
 }
 
@@ -281,13 +290,12 @@ a {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding-top: 8px;
 
   padding-left: 16px;
   padding-right: 16px;
 }
 .icon-link {
-  fill: #fff;
+  fill: #f4f4fd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,6 +335,7 @@ a {
 }
 
 .team-item {
+  width: calc((100% - 72px) / 4);
   background-color: #fff;
   border-radius: 0 0 4px 4px;
   box-shadow:
